@@ -4,6 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base : '/D-D-construction/',
   plugins: [react()],
   resolve: {
     alias: {
