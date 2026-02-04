@@ -1,0 +1,2 @@
+import{r as n}from"./redux-Bg3L8kwu.js";import{p as l}from"./index-CJlfX0wT.js";function b({threshold:f=.15,rootMargin:i="0px",triggerOnce:s=!0}={}){const[u,r]=n.useState(!1),o=n.useRef(null);return n.useEffect(()=>{if(l()){r(!0);return}const t=new IntersectionObserver(([c])=>{c.isIntersecting?(r(!0),s&&t.disconnect()):s||r(!1)},{threshold:f,rootMargin:i}),e=o.current;return e&&t.observe(e),()=>{e&&t.unobserve(e)}},[f,i,s]),[o,u]}export{b as u};
+//# sourceMappingURL=useScrollReveal-BRghpInA.js.map
