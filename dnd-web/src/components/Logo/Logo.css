@@ -1,0 +1,63 @@
+/* Logo Component */
+.logo {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  gap: 2px;
+}
+
+.logo__text {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.logo__sub {
+  font-family: var(--font-subheading);
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
+/* Size Variants */
+.logo--small .logo__text {
+  font-size: 1.2rem;
+}
+
+.logo--small .logo__sub {
+  font-size: 0.45rem;
+}
+
+.logo--medium .logo__text {
+  font-size: 1.6rem;
+}
+
+.logo--medium .logo__sub {
+  font-size: 0.55rem;
+}
+
+.logo--large .logo__text {
+  font-size: 2.4rem;
+}
+
+.logo--large .logo__sub {
+  font-size: 0.7rem;
+}
+
+/* Company Brand Colors */
+.logo--dnd-construction .logo__text {
+  color: var(--color-laurel-green);
+}
+
+.logo--dnd-construction .logo__sub {
+  color: var(--color-charcoal);
+}
+
+.logo--danish-design .logo__text {
+  color: var(--color-ochre-gold);
+}
+
+.logo--danish-design .logo__sub {
+  color: var(--color-charcoal);
+}

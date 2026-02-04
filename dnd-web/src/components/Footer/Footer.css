@@ -1,0 +1,175 @@
+/* ═══════════════════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════════════════ */
+
+.footer {
+  background-color: var(--color-laurel-green);
+  color: var(--color-white);
+  padding: var(--space-3xl) 0 0;
+}
+
+.footer__inner {
+  display: grid;
+  grid-template-columns: 1.8fr 0.9fr 0.9fr 1.2fr;
+  gap: var(--space-xl);
+  padding-bottom: var(--space-2xl);
+}
+
+/* ─── Brand Column ─── */
+.footer__company {
+  margin-bottom: var(--space-xl);
+}
+
+.footer__company-name {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.footer__company-tag {
+  font-family: var(--font-subheading);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ochre-gold);
+  margin-bottom: var(--space-md);
+}
+
+.footer__company-desc {
+  font-size: 0.88rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.65);
+  max-width: 340px;
+}
+
+/* Danish Design sub-brand */
+.footer__company--design {
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer__company-name--design {
+  font-size: 1.05rem;
+  color: var(--color-ochre-gold);
+}
+
+.footer__company-tag--design {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* ─── Column Titles ─── */
+.footer__col-title {
+  font-family: var(--font-subheading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-ochre-gold);
+  margin-bottom: var(--space-lg);
+}
+
+/* ─── Link Lists ─── */
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.footer__link {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.65);
+  transition: color var(--transition-fast), padding-left var(--transition-fast);
+  display: inline-block;
+}
+
+.footer__link:hover {
+  color: var(--color-white);
+  padding-left: 4px;
+}
+
+.footer__link--static {
+  cursor: default;
+}
+
+.footer__link--static:hover {
+  padding-left: 0;
+}
+
+/* ─── Contact Items ─── */
+.footer__contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-sm);
+}
+
+.footer__contact-icon {
+  color: var(--color-ochre-gold);
+  flex-shrink: 0;
+}
+
+/* ─── Working Hours ─── */
+.footer__hours {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-lg);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer__hours-title {
+  font-family: var(--font-subheading);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-ochre-gold);
+  margin-bottom: var(--space-sm);
+}
+
+.footer__hours-line {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 4px;
+  gap: var(--space-lg);
+}
+
+/* ─── Bottom Copyright Bar ─── */
+.footer__bottom {
+  margin-top: var(--space-lg);
+  padding: var(--space-md) 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer__copyright {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+  font-family: var(--font-subheading);
+  letter-spacing: 0.05em;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .footer__company-desc {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════════════════
+   EXPERTISE SECTION
+   ═══════════════════════════════════════════════════════ */
+
+.expertise {
+  background: var(--color-parchment);
+}
+
+/* ─── Header ─── */
+.expertise__header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.expertise__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-laurel-green);
+  margin-bottom: var(--space-md);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: none;
+}
+
+.expertise__title--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.expertise__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  color: var(--color-charcoal);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+
+.expertise__subtitle--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+}
+
+/* ─── Grid ─── */
+.expertise__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+/* ─── Card ─── */
+.expertise__card {
+  background: var(--color-white);
+  padding: var(--space-xl);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-ambient);
+  transition: var(--transition-slow);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.expertise__card--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: calc(0.4s + var(--card-index) * 0.1s);
+}
+
+.expertise__card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-ambient-hover);
+}
+
+/* ─── Icon with Blueprint Draw Animation ─── */
+.expertise__icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-laurel-green), var(--color-ochre-gold));
+  border-radius: 50%;
+  padding: var(--space-md);
+}
+
+.expertise__icon-svg {
+  color: var(--color-white);
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200;
+  transition: none;
+}
+
+.expertise__card--visible .expertise__icon-svg {
+  animation: blueprintDraw 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  animation-delay: calc(0.6s + var(--card-index) * 0.1s);
+  --dash-total: 200;
+}
+
+/* ─── Card Content ─── */
+.expertise__card-title {
+  font-family: var(--font-subheading);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-laurel-green);
+  margin-bottom: var(--space-sm);
+}
+
+.expertise__card-desc {
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-charcoal);
+  opacity: 0.8;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .expertise__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+}

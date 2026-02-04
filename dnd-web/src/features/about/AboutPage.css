@@ -1,0 +1,31 @@
+/* ═══════════════════════════════════════════════════════
+   ABOUT PAGE
+   ═══════════════════════════════════════════════════════ */
+
+.about-page {
+  padding-top: 80px;
+}
+
+/* ─── Hero ─── */
+.about-page__hero {
+  background: linear-gradient(135deg, var(--color-laurel-green), var(--color-charcoal));
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.about-page__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-md);
+  color: gray;
+}
+
+.about-page__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  color: gray;
+}

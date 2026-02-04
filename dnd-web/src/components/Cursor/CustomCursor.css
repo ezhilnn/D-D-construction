@@ -1,0 +1,12 @@
+.custom-cursor {
+  position: fixed;
+  z-index: var(--z-cursor, 9999);
+  pointer-events: none;
+
+  width: 8px;
+  height: 8px;
+  background: black;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}

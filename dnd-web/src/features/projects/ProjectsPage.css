@@ -1,0 +1,50 @@
+/* ═══════════════════════════════════════════════════════
+   PROJECTS PAGE
+   ═══════════════════════════════════════════════════════ */
+
+.projects-page {
+  padding-top: 80px;
+}
+
+/* ─── Hero ─── */
+.projects-page__hero {
+  background: linear-gradient(135deg, var(--color-laurel-green), var(--color-charcoal));
+  padding: var(--space-3xl) 0 var(--space-2xl);
+  text-align: center;
+  color: var(--color-white);
+}
+
+.projects-page__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  margin-bottom: var(--space-md);
+  color: gray;
+}
+
+.projects-page__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+  color: gray;
+}
+
+/* ─── Filter Section ─── */
+.projects-page__filter {
+  background: var(--color-alabaster);
+  border-bottom: 1px solid rgba(74, 93, 78, 0.1);
+}
+
+/* ─── Grid Section ─── */
+.projects-page__grid {
+  background: var(--color-alabaster);
+}
+
+.projects-page__loading {
+  text-align: center;
+  padding: var(--space-3xl);
+  font-family: var(--font-body);
+  color: var(--color-charcoal);
+  opacity: 0.6;
+}

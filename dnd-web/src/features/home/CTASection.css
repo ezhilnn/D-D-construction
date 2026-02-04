@@ -1,0 +1,207 @@
+/* ═══════════════════════════════════════════════════════
+   CTA SECTION
+   ═══════════════════════════════════════════════════════ */
+
+.cta {
+  background: linear-gradient(
+    135deg,
+    var(--color-laurel-green) 0%,
+    var(--color-charcoal) 100%
+  );
+  color: var(--color-white);
+  text-align: center;
+}
+
+.cta__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* ─── Header ─── */
+.cta__title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--color-white);
+  margin-bottom: var(--space-md);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: none;
+}
+
+.cta__title--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.cta__subtitle {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: var(--space-3xl);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+
+.cta__subtitle--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+}
+
+/* ─── Dual Company Cards ─── */
+.cta__companies {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--space-2xl);
+  align-items: center;
+  margin-bottom: var(--space-2xl);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: none;
+}
+
+.cta__companies--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s forwards;
+}
+
+.cta__company {
+  text-align: center;
+}
+
+.cta__company-name {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-white);
+  margin-bottom: var(--space-xs);
+}
+
+.cta__company-name--design {
+  color: var(--color-ochre-gold);
+}
+
+.cta__company-tag {
+  font-family: var(--font-subheading);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: var(--space-lg);
+}
+
+.cta__company-tag--design {
+  color: var(--color-ochre-gold);
+  opacity: 0.8;
+}
+
+.cta__company-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: stretch;
+}
+
+/* Override button styles for CTA section */
+.cta__company-actions .btn {
+  border-color: var(--color-white);
+  color: var(--color-white);
+}
+
+.cta__company-actions .btn--primary:hover {
+  background: var(--color-white);
+  color: var(--color-laurel-green);
+}
+
+.cta__company-actions .btn--secondary {
+  border-color: var(--color-ochre-gold);
+  color: var(--color-ochre-gold);
+}
+
+.cta__company-actions .btn--secondary:hover {
+  background: var(--color-ochre-gold);
+  color: var(--color-white);
+}
+
+.cta__company-actions .btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ─── Divider ─── */
+.cta__divider {
+  width: 1px;
+  height: 120px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+}
+
+/* ─── Phone CTA ─── */
+.cta__phone {
+  padding-top: var(--space-2xl);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: none;
+}
+
+.cta__phone--visible {
+  animation: fadeInUp 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.6s forwards;
+}
+
+.cta__phone-label {
+  font-family: var(--font-subheading);
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: var(--space-sm);
+}
+
+.cta__phone-number {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-ochre-gold);
+  transition: var(--transition-fast);
+  display: inline-block;
+}
+
+.cta__phone-number:hover {
+  color: var(--color-white);
+  transform: scale(1.05);
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════════ */
+
+@media (max-width: 768px) {
+  .cta__companies {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .cta__divider {
+    width: 80px;
+    height: 1px;
+    margin: 0 auto;
+    background: linear-gradient(
+      to right,
+      transparent,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    );
+  }
+
+  .cta__company-actions {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .cta__phone-number {
+    font-size: 1.4rem;
+  }
+}

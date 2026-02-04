@@ -1,0 +1,27 @@
+/* Card Component */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-ambient);
+  padding: var(--space-lg);
+  transition: var(--transition-slow);
+}
+
+/* Glass Variant - Glassmorphism Effect */
+.card--glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: var(--glass-border);
+  box-shadow: var(--shadow-glass);
+}
+
+/* Hover Variant - Lift on Hover */
+.card--hover {
+  cursor: pointer;
+}
+
+.card--hover:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-ambient-hover);
+}

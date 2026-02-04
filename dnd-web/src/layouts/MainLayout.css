@@ -1,0 +1,10 @@
+/* MainLayout — ensures footer sticks to the bottom */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-layout__content {
+  flex: 1;
+}

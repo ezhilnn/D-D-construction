@@ -1,0 +1,129 @@
+/* ═══════════════════════════════════════════════════════
+   CONTACT INFO
+   ═══════════════════════════════════════════════════════ */
+
+.contact-info {
+  background: var(--color-white);
+  padding: var(--space-2xl);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-ambient);
+}
+
+.contact-info__title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-laurel-green);
+  margin-bottom: var(--space-xl);
+}
+
+/* ─── Contact Items ─── */
+.contact-info__item {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid rgba(74, 93, 78, 0.15);
+}
+
+.contact-info__item:last-of-type {
+  border-bottom: none;
+}
+
+.contact-info__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 93, 78, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--color-laurel-green);
+  flex-shrink: 0;
+}
+
+.contact-info__label {
+  font-family: var(--font-subheading);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+.contact-info__value {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-laurel-green);
+  transition: var(--transition-fast);
+}
+
+.contact-info__value:hover {
+  color: var(--color-ochre-gold);
+}
+
+/* ─── Sections ─── */
+.contact-info__section {
+  margin-top: var(--space-xl);
+}
+
+.contact-info__section-title {
+  font-family: var(--font-subheading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-laurel-green);
+  margin-bottom: var(--space-md);
+}
+
+/* ─── Working Hours ─── */
+.contact-info__hours {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.contact-info__hour {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-charcoal);
+}
+
+.contact-info__hour span:first-child {
+  font-weight: 500;
+}
+
+.contact-info__hour span:last-child {
+  opacity: 0.7;
+}
+
+/* ─── Service Areas ─── */
+.contact-info__areas {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-sm);
+}
+
+.contact-info__areas li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-charcoal);
+  padding-left: var(--space-md);
+  position: relative;
+}
+
+.contact-info__areas li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background: var(--color-ochre-gold);
+  border-radius: 50%;
+}
