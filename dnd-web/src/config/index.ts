@@ -104,11 +104,11 @@ export const EXPERIENCE_YEARS = 15;
 
 export const NAV_LINKS: NavLink[] = [
   { id: 'home', label: 'Home', path: '/', previewImage: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80' },
-  { id: 'about', label: 'About Us', path: '/about', previewImage: 'https://images.unsplash.com/photo-1611040789322-76d266deed7d?w=600&q=80' },
+  { id: 'about', label: 'About Us', path: '/about', previewImage: 'https://img.freepik.com/free-photo/about-as-service-contact-information-concept_53876-138509.jpg' },
   { id: 'services', label: 'Services', path: '/services', previewImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80' },
-  { id: 'projects', label: 'Projects', path: '/projects', previewImage: 'https://images.unsplash.com/photo-1600596542815-ffad68e1e76e?w=600&q=80' },
+  { id: 'projects', label: 'Projects', path: '/projects', previewImage: 'https://img.freepik.com/free-photo/business-people-are-brainstorming_53876-137640.jpg?semt=ais_hybrid&w=740&q=80' },
   { id: 'contact', label: 'Contact', path: '/contact', previewImage: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80' },
-  { id: 'legal', label: 'Legal', path: '/legal', previewImage: 'https://images.unsplash.com/photo-1568455346182-ea4780333bb8?w=600&q=80' },
+  { id: 'legal', label: 'Legal', path: '/legal', previewImage: 'https://img.freepik.com/free-photo/top-view-career-guidance-items-judges_23-2149443473.jpg?semt=ais_user_personalization&w=740&q=80' },
 ];
 
 // ─────────────────────────────────────────────
