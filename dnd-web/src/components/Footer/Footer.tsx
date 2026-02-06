@@ -24,6 +24,11 @@ export default function Footer() {
           <div className="footer__company footer__company--design">
             <h4 className="footer__company-name footer__company-name--design">Danish Design Studio</h4>
             <p className="footer__company-tag footer__company-tag--design">Design That Breathes Life Into Spaces.</p>
+            
+            <p className="footer__company-desc">
+              Crafting elegant architectural and interior experiences where creativity meets precision.
+              Transforming spaces into timeless environments that reflect individuality, comfort, and refined aesthetics.
+            </p>
           </div>
         </div>
 
@@ -61,7 +66,13 @@ export default function Footer() {
             </svg>
             <a href={CONTACT_INFO.phoneHref} className="footer__link">{CONTACT_INFO.phoneFormatted}</a>
           </div>
-
+            
+            <div className="footer__contact-item">
+            <svg className="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+            </svg>
+            <a href={CONTACT_INFO.alternatephoneHref} className='footer__link'>{CONTACT_INFO.alternatephoneformatted}</a>
+          </div>
           <div className="footer__contact-item">
             <svg className="footer__contact-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
@@ -85,12 +96,19 @@ export default function Footer() {
 
       {/* ─── Bottom Bar ─── */}
       <div className="footer__bottom">
-        <div className="container">
-          <p className="footer__copyright">
-            © {new Date().getFullYear()} D&D Construction & Danish Design Studio. All rights reserved.
-          </p>
-        </div>
-      </div>
+  <div className="container footer__bottom-inner">
+    <p className="footer__copyright">
+      © {new Date().getFullYear()} D&D Construction & Danish Design Studio. All rights reserved.
+    </p>
+
+    <div className="footer__credits">
+      <p className="footer__copyright">Made in India ❤️</p>
+      <p className="footer__copyright">Developed by Ezhilan Nagarajan</p>
+      <p className="footer__copyright">Contact: ezhilneng@gmail.com</p>
+    </div>
+  </div>
+</div>
+
     </footer>
   );
 }

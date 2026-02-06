@@ -62,6 +62,14 @@ const DESIGN_SERVICES = [
     icon: 'M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01',
     features: ['Material selection', 'Lighting design', 'Furniture curation', 'Color consultation'],
   },
+  ,
+  {
+    id: 'landscape',
+    title: 'Landscape & Outdoor Design',
+    description: 'Thoughtful landscape architecture that extends luxury living to outdoor spaces with sustainable green solutions.',
+    icon: 'M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z',
+    features: ['Garden planning', 'Outdoor lighting', 'Water features', 'Eco-friendly landscaping'],
+  },
 ];
 
 export default function ServicesPage() {
@@ -92,7 +100,20 @@ export default function ServicesPage() {
       </section>
 
       {/* Design Services */}
-      <section className="services-page__section services-page__section--alt section-pad">
+      <section className="services-page__section section-pad">
+        <div className="container">
+          <h2 className="services-page__section-title">
+            Danish Design Studio Services
+          </h2>
+          <div className="services-page__grid">
+            {DESIGN_SERVICES.map((service) => (
+              <ServiceCard key={service.id} service={service} design />
+            ))}
+          </div>
+        </div>
+      </section>
+  {/* Design Services */}
+      {/* <section className="services-page__section services-page__section--alt section-pad">
         <div className="container">
           <h2 className="services-page__section-title services-page__section-title--design">
             Danish Design Studio Services
@@ -103,8 +124,7 @@ export default function ServicesPage() {
             ))}
           </div>
         </div>
-      </section>
-
+      </section> */}
       {/* Approval Tracker */}
       <section className="services-page__section section-pad">
         <div className="container">

@@ -38,6 +38,12 @@ const SERVICES = [
     description: 'Complete project management from concept to handover—worry-free execution.',
     icon: 'M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z',
   },
+  {
+    id: '3d-visualization',
+    title: '3D Visualization & Rendering',
+    description: 'Photorealistic 3D renders and walkthroughs bringing your project to life before construction.',
+    icon: 'M15 12a3 3 0 11-6 0 3 3 0 016 0z M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z',
+  },
 ];
 
 export default function ExpertiseSection() {

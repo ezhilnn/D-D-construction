@@ -52,7 +52,7 @@ export default function CTASection() {
                   <Button variant="secondary">Design Services</Button>
                 </Link>
                 <Link to="/contact">
-                  <Button variant="ghost">Get Consultation</Button>
+                  <Button variant="secondary">Get Consultation</Button>
                 </Link>
               </div>
             </div>
@@ -63,6 +63,10 @@ export default function CTASection() {
             <p className="cta__phone-label">Or call us directly:</p>
             <a href={CONTACT_INFO.phoneHref} className="cta__phone-number">
               {CONTACT_INFO.phoneFormatted}
+            </a>
+            <p>    </p>
+            <a href={CONTACT_INFO.alternatephoneHref} className="cta__phone-number">
+              {CONTACT_INFO.alternatephoneformatted}
             </a>
           </div>
         </div>

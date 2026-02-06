@@ -8,12 +8,13 @@
   /* Colors */
   --color-alabaster:    #FDFCF8;
   --color-parchment:    #F2F0E9;
-  --color-laurel-green: #4A5D4E;
+  --color-laurel-green:   #4A6B7C;  /* Primary blue (was laurel-green) */
+   /* Light blue variant */
   --color-ochre-gold:   #D4A373;
   --color-charcoal:     #2C2C2C;
   --color-white:        #FFFFFF;
-  --color-green-10:     rgba(74, 93, 78, 0.10);
-  --color-green-05:     rgba(74, 93, 78, 0.05);
+  --color-green-10:      rgba(74, 107, 124, 0.10);  /* Updated from green */
+  --color-green-05:      rgba(74, 107, 124, 0.05);  /* Updated from green */
   --color-gold-20:      rgba(212, 163, 115, 0.20);
 
   /* Fonts */
@@ -36,10 +37,10 @@
   --radius-md:  8px;
   --radius-lg:  12px;
 
-  /* Shadows — Soft Ambient Occlusion (green-tinted) */
-  --shadow-ambient:       0 4px 30px rgba(74, 93, 78, 0.05);
-  --shadow-ambient-hover: 0 8px 40px rgba(74, 93, 78, 0.10);
-  --shadow-glass:         0 2px 20px rgba(74, 93, 78, 0.08);
+  /* Shadows — Soft Ambient Occlusion (blue-tinted) */
+  --shadow-ambient:       0 4px 30px rgba(74, 107, 124, 0.05);
+  --shadow-ambient-hover: 0 8px 40px rgba(74, 107, 124, 0.10);
+  --shadow-glass:         0 2px 20px rgba(74, 107, 124, 0.08);
 
   /* Glassmorphism */
   --glass-bg:     rgba(255, 255, 255, 0.70);

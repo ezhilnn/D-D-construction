@@ -128,6 +128,7 @@ export default function LegalPage() {
               <p className="legal-page__contact">
                 <strong>Email:</strong> info@dndconstruction.com<br />
                 <strong>Phone:</strong> +91 915 991 3330<br />
+                <strong>Phone:</strong> +91 822 068 1330 <br />
                 <strong>Address:</strong> Chennai, Tamil Nadu, India
               </p>
             </div>

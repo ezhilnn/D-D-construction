@@ -151,6 +151,18 @@
   font-family: var(--font-subheading);
   letter-spacing: 0.05em;
 }
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.footer__credits {
+  text-align: right;
+}
+
 
 /* ═══════════════════════════════════════════════════════
    RESPONSIVE

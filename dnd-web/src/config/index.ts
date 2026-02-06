@@ -7,7 +7,8 @@ import type { Company, ServiceArea, NavLink, ApprovalStep } from '@/types';
 export const COLORS = {
   alabaster: '#FDFCF8',        // Primary base background
   parchment: '#F2F0E9',        // Secondary surface / section backgrounds
-  laurelGreen: '#4A5D4E',      // Hero accent — buttons, headings, footer
+  laurelGreen: '#4A6B7C',        // Hero accent — buttons, headings, footer (was laurelGreen)
+        // Light blue variant
   ochreGold: '#D4A373',        // Luxury accent — highlights, active, icons
   charcoal: '#2C2C2C',         // Primary text
   white: '#FFFFFF',
@@ -21,9 +22,9 @@ export const FONTS = {
 } as const;
 
 export const SHADOWS = {
-  ambient: '0 4px 30px rgba(74, 93, 78, 0.05)',      // Soft green-tinted ambient occlusion
-  ambientHover: '0 8px 40px rgba(74, 93, 78, 0.10)', // Slightly stronger on hover
-  glass: '0 2px 20px rgba(74, 93, 78, 0.08)',        // For glassmorphism panels
+  ambient: '0 4px 30px rgba(74, 107, 124, 0.05)',      // Soft blue-tinted ambient occlusion
+  ambientHover: '0 8px 40px rgba(74, 107, 124, 0.10)', // Slightly stronger on hover
+  glass: '0 2px 20px rgba(74, 107, 124, 0.08)',        // For glassmorphism panels
 } as const;
 
 export const GLASS = {
@@ -85,6 +86,9 @@ export const CONTACT_INFO = {
   phoneHref: 'tel:+919159913330',
   email: 'info@dndconstruction.com',
   designEmail: 'design@danishdesignstudio.com',
+  alternatephone : '8220681330',
+  alternatephoneformatted : '+91 822 068 1330',
+  alternatephoneHref : 'tel:+918220681330'
 } as const;
 
 export const WORKING_HOURS = {
