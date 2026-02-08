@@ -161,7 +161,7 @@
 }
 
 .cta__phone-number {
-  font-family: var(--font-heading);
+  font-family: var(--font-body);
   font-size: 1.8rem;
   font-weight: 600;
   color: var(--color-ochre-gold);

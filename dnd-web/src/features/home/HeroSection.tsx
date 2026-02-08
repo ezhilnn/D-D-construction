@@ -68,13 +68,13 @@ export default function HeroSection() {
           </Link>
         </div>
 
-        {/* Scroll Indicator */}
+        {/* Scroll Indicator
         <div className={`hero__scroll ${isLoaded ? 'hero__scroll--loaded' : ''}`}>
           <span className="hero__scroll-text">Scroll to Explore</span>
           <svg className="hero__scroll-icon" width="12" height="16" viewBox="0 0 12 16" fill="none">
             <path d="M6 0V14M6 14L1 9M6 14L11 9" stroke="currentColor" strokeWidth="1.5" />
           </svg>
-        </div>
+        </div> */}
       </div>
     </section>
   );
