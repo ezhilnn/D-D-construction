@@ -40,7 +40,7 @@ export default function HeroSection() {
             ))}
           </span>
           <span className="hero__title-line">
-            {'Delivered with Excellence.'.split('').map((char, i) => (
+            {'Delivered with Excellence'.split('').map((char, i) => (
               <span
                 key={i}
                 className="hero__title-char"
